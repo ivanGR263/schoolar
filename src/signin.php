@@ -14,13 +14,10 @@
 FROM users
 
 	WHERE 
-	email    =  '$email' and 
-	password =  '$passw' and
-	status = true 
-	GROUP BY 
-	id;
-
-     ";
+	    email    =  '$email' and 
+	    password =  '$passw' and
+	    status = true 
+	 ";
    $res = pg_query($conn, $sql);
    
     if ($res){
@@ -28,7 +25,7 @@ FROM users
         if($row['total'] > 0){
             echo  "login ok";
         }else {
-            echo "login fail";
+            echo "user does not exist";
         }
     }
 
