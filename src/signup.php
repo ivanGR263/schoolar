@@ -23,7 +23,7 @@ if($res){
             $res = pg_query ($conn, $sql);
 
             if ($res){
-                echo "<script>alert('user has been created. Go to login!')";
+                echo "<script>alert('user has been created. Go to login!')</script>";
                 header ('refresh:0; url =http://localhost/schoolar/src/signup.html');
             }else{
                 echo "error";
