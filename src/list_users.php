@@ -17,6 +17,7 @@ include('../config/database.php');
             <th>Lastname</th>
             <th>E_mail</th>
             <th>Status</th>
+            <th>Photo</th>
             <td>...</td>
         </tr>
         
@@ -35,10 +36,11 @@ include('../config/database.php');
             echo "<td>".$row['lastname']."</td>";
             echo "<td>".$row['email']."</td>";
             echo "<td>".$row['status']."</td>";
+            echo "<td><img src= 'Photo_users/Photo_default.png' width = '15'></td>";
             echo "<td>";
-            echo "<a href=''><img src='icons/usuario.png' width='15'></a>";
-            echo "<a href=''><img src='icons/delete.png' width='15'></a>";
-            echo "<a href=''><img src='icons/search.png' width='15'></a>";
+            echo "<a href=''><img src='icon/icon_pencil.png' width='15'></a>";
+            echo "<a href=''><img src='icon/delete.png' width='15'></a>";
+            echo "<a href=''><img src='icon/search.png' width='15'></a>";
             echo "</td>";
             echo "</tr>";
         }
